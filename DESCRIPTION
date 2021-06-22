@@ -17,6 +17,13 @@ Imports:
     paletteer
 Suggests: 
     ggthemes,
-    tvthemes
+    tvthemes,
+    gameofthrones (>= 1.0.0),
+    harrypotter (>= 2.1.0),
+    oompaBase,
+    palr,
+    pals,
+    scico,
+    viridisLite
 URL: https://github.com/EmilHvitfeldt/ggrandom
 BugReports: https://github.com/EmilHvitfeldt/ggrandom/issues
