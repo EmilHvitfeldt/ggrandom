@@ -4,6 +4,8 @@
 # ggrandom
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/EmilHvitfeldt/ggrandom/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/ggrandom/actions)
 <!-- badges: end -->
 
 The goal of ggrandom is to introduce CHAOS to ggplot2 by adding random
