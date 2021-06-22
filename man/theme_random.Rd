@@ -14,6 +14,7 @@ not work affect \code{theme_random()}. Defaults to \code{FALSE}.}
 Random Theme for ggplot2
 }
 \examples{
+\dontrun{
 library(ggplot2)
 
 ggplot(mtcars, aes(mpg, disp)) +
@@ -24,4 +25,5 @@ set.seed(1234)
 ggplot(mtcars, aes(mpg, disp)) +
   geom_point() +
   theme_random(chaos = TRUE)
+}
 }

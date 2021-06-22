@@ -6,6 +6,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' library(ggplot2)
 #'
 #' ggplot(mtcars, aes(mpg, disp)) +
@@ -16,6 +17,7 @@
 #' ggplot(mtcars, aes(mpg, disp)) +
 #'   geom_point() +
 #'   theme_random(chaos = TRUE)
+#'}
 theme_random <- function(chaos = FALSE) {
 
   n_themes <- length(all_themes)
