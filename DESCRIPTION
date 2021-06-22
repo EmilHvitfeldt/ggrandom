@@ -17,3 +17,5 @@ Imports:
 Suggests: 
     ggthemes,
     tvthemes
+URL: https://github.com/EmilHvitfeldt/ggrandom
+BugReports: https://github.com/EmilHvitfeldt/ggrandom/issues
