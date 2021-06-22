@@ -48,6 +48,38 @@ ggplot(mtcars, aes(mpg, disp)) +
   theme_random(chaos = TRUE)
 ```
 
+use `scale_colour_random_c()/scale_fill_random_c()` to add a random continuous color scale. Setting `chaos = TRUE` lets `scale_colour_random_c()/scale_fill_random_c()` "ignore" the seed.
+
+```{r}
+library(ggplot2)
+library(ggrandom)
+
+ggplot(mtcars, aes(mpg, disp, color = drat)) +
+  geom_point() +
+  scale_colour_random_c()
+
+set.seed(1234)
+ggplot(mtcars, aes(mpg, disp, color = drat)) +
+  geom_point() +
+  scale_colour_random_c(chaos = TRUE)
+```
+
+use `scale_colour_random_d()/scale_fill_random_d()` to add a random discrete color scale. Setting `chaos = TRUE` lets `scale_colour_random_d()/scale_fill_random_d()` "ignore" the seed.
+
+```{r}
+library(ggplot2)
+library(ggrandom)
+
+ggplot(mtcars, aes(mpg, disp, color = factor(vs))) +
+  geom_point() +
+  scale_colour_random_d()
+
+set.seed(1234)
+ggplot(mtcars, aes(mpg, disp, color = factor(vs))) +
+  geom_point() +
+  scale_colour_random_d(chaos = TRUE)
+```
+
 ## Example (gif)
 
 ![](man/images/random.gif)
