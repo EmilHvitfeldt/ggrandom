@@ -35,20 +35,34 @@ if (requireNamespace("tvthemes", quietly = TRUE)) {
   )
 }
 
-if (requireNamespace("ggdark", quietly = TRUE)) {
+if (requireNamespace("ggthemes", quietly = TRUE)) {
   palettes <- c(
-    "dark_theme_gray",
-    "dark_theme_bw",
-    "dark_theme_linedraw",
-    "dark_theme_light",
-    "dark_theme_dark",
-    "dark_theme_minimal",
-    "dark_theme_classic",
-    "dark_theme_void"
+    "theme_base",
+    "theme_calc",
+    "theme_clean",
+    "theme_economist",
+    "theme_economist_white",
+    "theme_excel",
+    "theme_excel_new",
+    "theme_few",
+    "theme_fivethirtyeight",
+    "theme_foundation",
+    "theme_gdocs",
+    "theme_hc",
+    "theme_igray",
+    "theme_map",
+    "theme_pander",
+    "theme_par",
+    "theme_solarized",
+    "theme_solarized_2",
+    "theme_solid",
+    "theme_stata",
+    "theme_tufte",
+    "theme_wsj"
   )
 
   all_themes <- c(
     all_themes,
-    lapply(palettes, getExportedValue, ns = "ggdark")
+    lapply(palettes, getExportedValue, ns = "ggthemes")
   )
 }

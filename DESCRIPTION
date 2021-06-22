@@ -1,5 +1,5 @@
 Package: ggrandom
-Title: What the Package Does (One Line, Title Case)
+Title: Introduce Absolute Chaos to 'ggplot2'
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Emil",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "emilhhvitfeldt@gmail.com",
            comment = c(ORCID = "0000-0002-0679-1945"))
-Description: What the package does (one paragraph).
+Description: Introduce Absolute Chaos to 'ggplot2' by providing random themes.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -15,5 +15,5 @@ RoxygenNote: 7.1.1.9001
 Imports: 
     ggplot2
 Suggests: 
-    ggdark,
+    ggthemes,
     tvthemes
