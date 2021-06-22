@@ -2,19 +2,26 @@
 % Please edit documentation in R/theme_random.R
 \name{theme_random}
 \alias{theme_random}
-\title{Title}
+\title{Random Theme for ggplot2}
 \usage{
 theme_random(chaos = FALSE)
 }
 \arguments{
-\item{chaos}{h}
-}
-\value{
-h
+\item{chaos}{Logical, if set to \code{TRUE} enables FULL CHAOS MODE. Seeding will
+not work affect \code{theme_random()}. Defaults to \code{FALSE}.}
 }
 \description{
-Title
+Random Theme for ggplot2
 }
 \examples{
-1 + 1
+library(ggplot2)
+
+ggplot(mtcars, aes(mpg, disp)) +
+  geom_point() +
+  theme_random()
+
+set.seed(1234)
+ggplot(mtcars, aes(mpg, disp)) +
+  geom_point() +
+  theme_random(chaos = TRUE)
 }
